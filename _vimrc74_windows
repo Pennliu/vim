@@ -41,6 +41,17 @@ map <F12> :MBEbn<CR>
 Bundle 'bling/vim-airline'
 set laststatus=2
 
+Bundle 'nathanaelkane/vim-indent-guides'
+" 随 vim 自启动
+let g:indent_guides_enable_on_vim_startup=1
+" 从第二层开始可视化显示缩进
+let g:indent_guides_start_level=2
+" 色块宽度
+let g:indent_guides_guide_size=1
+" 快捷键 i 开/关缩进可视化
+:nmap <silent> <Leader>i <Plug>IndentGuidesToggle
+
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -67,6 +78,7 @@ if has('gui_running')
 	set guifont=Consolas:h12:cANSI
 endif
 
+filetype indent on
 set nu
 set autoindent
 set cindent 
@@ -75,6 +87,15 @@ set tabstop=4
 set shiftwidth=4
 "set backspace delete enable
 set backspace=2
+set expandtab
+set softtabstop=4
+
+"code fold
+"" 基于缩进或语法进行代码折叠
+"set foldmethod=indent
+set foldmethod=syntax
+" 启动 vim 时关闭折叠代码
+set nofoldenable
 
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
