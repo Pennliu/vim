@@ -30,6 +30,7 @@ Bundle 'bufexplorer.zip'
 Bundle 'The-NERD-tree'
 Plugin 'minibufexplorerpp'
 let g:miniBufExplMapWindowNavVim = 1
+Plugin 'vim-scripts/Conque-GDB'
 
 
 """""""end
