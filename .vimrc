@@ -18,16 +18,13 @@ Plugin 'gmarik/Vundle.vim'
 Bundle 'taglist.vim'
 let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
-"let Tlist_Use_Right_Window = 1
 nmap tm :Tlist<cr>
-Bundle 'SuperTab'
-Bundle 'winmanager'
-let g:winManagerWindowLayout = 'FileExplorer'
-"let g:winManagerWindowLayout = "BufExplorer,FileExplorer|TagList"
-let g:winManagerWidth = 20
-nmap wm :WMToggle<cr>
-Bundle 'bufexplorer.zip'
-Bundle 'The-NERD-tree'
+"Bundle 'SuperTab'
+Bundle 'scrooloose/nerdtree'
+let NERDTreeWinPos='right'
+let NERDTreeWinSize=30
+let NERDTreeChDirMode=2
+nmap wm :NERDTreeToggle<CR>
 Plugin 'minibufexplorerpp'
 let g:miniBufExplMapWindowNavVim = 1
 Plugin 'vim-scripts/Conque-GDB'
