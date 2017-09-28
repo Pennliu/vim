@@ -28,6 +28,7 @@ nmap wm :NERDTreeToggle<CR>
 Plugin 'minibufexplorerpp'
 let g:miniBufExplMapWindowNavVim = 1
 Plugin 'vim-scripts/Conque-GDB'
+Plugin 'vim-scripts/Mark--Karkat'
 
 
 """""""end
@@ -46,7 +47,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-set fileencodings=utf-8,gbk,ucs-bom,cp936
+set fileencodings=utf-8,ucs-bom,cp936,gbk,gb2312
 
 set number
 set cindent
@@ -88,3 +89,17 @@ endif
 "colorscheme solarized
 
 set foldmethod=indent
+
+
+
+map <F11> :call FormartSrc()<CR>
+
+"define FormartSrc()
+func FormartSrc()
+exec "w"
+if &filetype == 'py'||&filetype == 'python'
+exec "r !autopep8 -i --aggressive %"
+endif
+exec "e! %"
+endfunc
+"end FormartSrc
