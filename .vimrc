@@ -18,6 +18,8 @@ Plugin 'gmarik/Vundle.vim'
 Bundle 'taglist.vim'
 let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
+let Tlist_Auto_Highlight_Tag = 1
+set updatetime=100
 nmap tm :Tlist<cr>
 "Bundle 'SuperTab'
 Bundle 'scrooloose/nerdtree'
