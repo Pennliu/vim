@@ -105,3 +105,7 @@ endif
 exec "e! %"
 endfunc
 "end FormartSrc
+
+set autochdir
+map <F5> :!cscope -Rbq<CR>:cs reset<CR><CR>
+
