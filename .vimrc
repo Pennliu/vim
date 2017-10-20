@@ -107,4 +107,5 @@ endfunc
 "end FormartSrc
 
 set autochdir
+set tags=tags;
 
