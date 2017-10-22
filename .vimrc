@@ -109,3 +109,5 @@ endfunc
 set autochdir
 set tags=tags;
 
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
+set laststatus=2
