@@ -29,6 +29,7 @@ let NERDTreeChDirMode=2
 nmap wm :NERDTreeToggle<CR>
 Plugin 'minibufexplorerpp'
 let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplorerMoreThanOne=0
 Plugin 'vim-scripts/Conque-GDB'
 Plugin 'vim-scripts/Mark--Karkat'
 
