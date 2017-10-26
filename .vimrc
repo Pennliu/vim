@@ -27,9 +27,9 @@ let NERDTreeWinPos='right'
 let NERDTreeWinSize=30
 let NERDTreeChDirMode=2
 nmap wm :NERDTreeToggle<CR>
-Plugin 'minibufexplorerpp'
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplorerMoreThanOne=0
+"Plugin 'minibufexplorerpp'
+"let g:miniBufExplMapWindowNavVim = 1
+"let g:miniBufExplorerMoreThanOne=0
 Plugin 'vim-scripts/Conque-GDB'
 Plugin 'vim-scripts/Mark--Karkat'
 Plugin 'kien/ctrlp.vim'
@@ -114,6 +114,7 @@ set tags=tags;
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 set laststatus=2
 
+let mapleader=";"
 let g:ctrlp_map = '<leader>p'
 let g:ctrlp_cmd = 'CtrlP'
 map <leader>f :CtrlPMRU<CR>
