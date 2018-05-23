@@ -33,7 +33,7 @@ nmap wm :NERDTreeToggle<CR>
 Plugin 'vim-scripts/Conque-GDB'
 Plugin 'vim-scripts/Mark--Karkat'
 Plugin 'kien/ctrlp.vim'
-
+Bundle 'chase/vim-ansible-yaml'
 
 """""""end
 " All of your Plugins must be added before the following line
