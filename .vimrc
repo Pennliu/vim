@@ -31,7 +31,7 @@ nmap wm :NERDTreeToggle<CR>
 "let g:miniBufExplMapWindowNavVim = 1
 "let g:miniBufExplorerMoreThanOne=0
 Plugin 'vim-scripts/Conque-GDB'
-Plugin 'vim-scripts/Mark--Karkat'
+"Plugin 'vim-scripts/Mark--Karkat'
 Plugin 'kien/ctrlp.vim'
 Bundle 'chase/vim-ansible-yaml'
 

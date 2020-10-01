@@ -6,3 +6,5 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 拷贝到~/.vimrc
 ## 安装插件
 打开Vim，执行命令PluginInstall
+## 安装软件
+apt install exuberant-ctags
